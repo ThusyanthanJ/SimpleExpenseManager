@@ -16,6 +16,8 @@
 
 package lk.ac.mrt.cse.dbs.simpleexpensemanager.data.model;
 
+import java.util.ArrayList;
+
 /**
  * This POJO holds the information about an account.
  */
@@ -24,7 +26,7 @@ public class Account {
     private String bankName;
     private String accountHolderName;
     private double balance;
-
+    public static ArrayList<Account> accountArrayList = new ArrayList<>();
     public String getAccountNo() {
         return accountNo;
     }
